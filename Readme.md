@@ -1,39 +1,38 @@
-Facebook/Heroku sample app -- PHP
-=================================
+#FuelPHP
 
-This is a sample app showing use of the Facebook Graph API, written in PHP, designed for deployment to [Heroku](http://www.heroku.com/).
+* Version: 1.6.1.
+* [Website](http://fuelphp.com/)
+* [Release Documentation](http://docs.fuelphp.com)
+* [Release API browser](http://api.fuelphp.com)
+* [Development branch Documentation](http://dev-docs.fuelphp.com)
+* [Development branch API browser](http://dev-api.fuelphp.com)
+* [Support Forum](http://fuelphp.com/forums) for comments, discussion and community support
 
-Run locally
------------
+## Description
 
-Configure Apache with a `VirtualHost` that points to the location of this code checkout on your system.
+FuelPHP is a fast, lightweight PHP 5.3 framework. In an age where frameworks are a dime a dozen, We believe that FuelPHP will stand out in the crowd.  It will do this by combining all the things you love about the great frameworks out there, while getting rid of the bad.
 
-[Create an app on Facebook](https://developers.facebook.com/apps) and set the Website URL to your local VirtualHost.
+## More information
 
-Copy the App ID and Secret from the Facebook app settings page into your `VirtualHost` config, something like:
+For more detailed information, see the [development wiki](https://github.com/fuelphp/fuelphp/wiki).
 
-    <VirtualHost *:80>
-        DocumentRoot /Users/adam/Sites/myapp
-        ServerName myapp.localhost
-        SetEnv FACEBOOK_APP_ID 12345
-        SetEnv FACEBOOK_SECRET abcde
-    </VirtualHost>
+##Development Team
 
-Restart Apache, and you should be able to visit your app at its local URL.
+* Harro Verton - Project Manager, Developer ([http://wanwizard.eu/](http://wanwizard.eu/))
+* Frank de Jonge - Developer ([http://frenky.net/](http://frenky.net/))
 
-Deploy to Heroku via Facebook integration
------------------------------------------
+### Want to join?
 
-The easiest way to deploy is to create an app on Facebook and click Cloud Services -> Get Started, then choose PHP from the dropdown.  You can then `git clone` the resulting app from Heroku.
+The FuelPHP development team is always looking for new team members, who are willing
+to help lift the framework to the next level, and have the commitment to not only
+produce awesome code, but also great documentation, and support to our users.
 
-Deploy to Heroku directly
--------------------------
+You can not apply for membership. Start by sending in pull-requests, work on outstanding
+feature requests or bugs, and become active in the #fuelphp IRC channel. If your skills
+are up to scratch, we will notice you, and will ask you to become a team member.
 
-If you prefer to deploy yourself, push this code to a new Heroku app on the Cedar stack, then copy the App ID and Secret into your config vars:
+### Alumni
 
-    heroku create --stack cedar
-    git push heroku master
-    heroku config:add FACEBOOK_APP_ID=12345 FACEBOOK_SECRET=abcde
-
-Enter the URL for your Heroku app into the Website URL section of the Facebook app settings page, hen you can visit your app on the web.
-
+* Jelmer Schreuder - Developer ([http://jelmerschreuder.nl/](http://jelmerschreuder.nl/))
+* Phil Sturgeon - Developer ([http://philsturgeon.co.uk](http://philsturgeon.co.uk))
+* Dan Horrigan - Founder, Developer ([http://dhorrigan.com](http://dhorrigan.com))
